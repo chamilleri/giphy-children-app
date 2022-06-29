@@ -1,0 +1,42 @@
+.App {
+  text-align: center;
+  padding: 16px;
+
+  h1 {
+    font-family: "Wonder Sans Bold", Sans-serif;
+    font-size: 48px;
+  }
+
+  $inactive-color-border: rgba(255, 255, 255, 0.9);
+  $inactive-color-bg: rgba(255, 255, 255, 0.8);
+  $inactive-color-bg-hover: $inactive-color-border;
+  $active-color: rgb(200 242 255 / 90%);
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li {
+      font-size: 28px;
+      border: 3px solid $inactive-color-border;
+      background-color: $inactive-color-bg;
+      border-radius: 8px;
+      padding: 16px;
+      margin: 4px;
+      width: 150px;
+
+      &:hover {
+        background-color: $inactive-color-bg-hover;
+        cursor: pointer;
+      }
+
+      &.active {
+        border: 3px solid $active-color;
+        background-color: $active-color;
+        pointer-events: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Wonder Sans Bold';
+  src: url('fonts/WonderUnitSans-Regular.woff2') format('woff')
+}
+
+@font-face {
+  font-family: 'Wonder Sans Regular';
+  src: url('fonts/WonderUnitSans-Regular.woff2') format('woff')
+}
+
+body {
+  background-color: #74d6ee;
+  background-image: linear-gradient(180deg, rgb(250, 150, 200) 0%, #74d6ee 100%);
+  background-attachment: fixed;
+  font-family: "Wonder Sans Regular", Sans-serif;
+}

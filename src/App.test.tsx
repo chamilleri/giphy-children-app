@@ -1,9 +1,11 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import React from "react";
+import { render, screen } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
+test("renders animals", () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const dogElement = screen.getByText(/Dog/i);
+  const listItems = screen.getAllByRole("listitem");
+  expect(dogElement).toBeInTheDocument();
+  expect(listItems.length).toEqual(5);
 });
